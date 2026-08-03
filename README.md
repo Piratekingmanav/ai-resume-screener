@@ -34,3 +34,40 @@ An automated, end-to-end recruitment pipeline that processes resumes, extracts t
 git clone [https://github.com/YOUR_USERNAME/ai-resume-screener.git](https://github.com/YOUR_USERNAME/ai-resume-screener.git)
 cd ai-resume-screener
 ```
+
+### 2. Configure Environment Variables
+
+```
+In the app/dashboard.py file, ensure you have inserted your Google AI Studio Authentication Key:
+client = genai.Client(api_key="YOUR_AQ_KEY_HERE")
+
+```
+
+### 3. Run with Docker
+
+```
+The entire application is containerized. Build and start the services with one command in vs code:
+
+docker-compose up --build
+
+```
+
+### 4. Access the Application
+
+Frontend Dashboard: http://localhost:8501
+
+Backend API Docs: http://localhost:8000/docs
+
+### 📂 Project Structure
+
+/app - Core FastAPI backend logic, routers, and database models.
+
+/dashboard.py - Streamlit frontend interface.
+
+docker-compose.yml - Multi-container orchestration.
+
+API.md - Core API endpoint documentation.
+
+SCHEMA.md - Database table architecture.
+
+/sample_data - Test resumes for evaluation.
