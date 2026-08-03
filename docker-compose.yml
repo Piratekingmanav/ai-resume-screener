@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: resume_screener_api
+    ports:
+      - "8000:8000"
+    networks:
+      - screener_network
+    volumes:
+      - ./app:/backend/app
+
+  ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.ui
+    container_name: resume_screener_ui
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    networks:
+      - screener_network
+
+networks:
+  screener_network:
+    driver: bridge
