@@ -1,0 +1,23 @@
+**Job Title: AI Engineer**
+
+**Job Description:**
+We are seeking a motivated AI Engineer to design, develop, and deploy AI/ML solutions. The ideal candidate should have experience with Machine Learning, Deep Learning, Generative AI, and Python, along with the ability to build scalable AI applications and solve real-world problems.
+
+**Required Skills:**
+
+* Python
+* Machine Learning & Deep Learning
+* Generative AI & LLMs
+* Prompt Engineering & RAG
+* LangChain/LlamaIndex
+* TensorFlow or PyTorch
+* SQL & REST APIs
+* Git/GitHub
+* Docker
+* AWS, Azure, or GCP (basic knowledge)
+* Strong problem-solving and communication skills
+
+
+Education : B-Tech , BE
+
+Experience : 1 year
